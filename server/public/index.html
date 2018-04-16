@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Employee Salary Calculator</h1>
+    <div id='tableupdate'>
+      employee call list
+    </div>
+    <div class= 'inputDiv'>
+      <!-- <form action="/action_page.php"> -->
+      <input type= "text" placeholder="first" id ='firstIn'>
+      <input type= "text" placeholder="Last" id ='lastIn'>
+      <input type= "number" placeholder="Id" id ='idIn'>
+      <input type= "text" placeholder="Title" id ='titleIn'>
+      <input type="number" placeholder="Salary" id ='salaryIn'>
+      <button id= 'submitButton' type = 'reset'> Submit </button>
+      <!--<button id='deleteButton' type = 'reset'> Delete</button> -->
+      <!-- </form> -->
+    </div>
+    <div class = 'container'>
+      <table id='employeeList'>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last Name</th>
+          <th>Id Number</th>
+          <th>Title</th>
+          <th>Salary</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!--intentional: you did make td's for the body this is all notes o make the next table better-->
+      </tbody>
+    </table>
+    <div id="total">Total Monthly: $</div>
+    </div>
+  </body>
+</html>
